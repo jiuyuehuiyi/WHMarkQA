@@ -46,6 +46,7 @@ pod spec lint XXXX.podspec --verbose
 
 ## 发布podspec
 pod trunk push `XXX.podspec`
+
 pod trunk push `XXX.podspec`--allow-warnings
 
 提交后可在[Specs仓库搜索](https://github.com/CocoaPods/Specs),如果能够搜索到说明提交成功
