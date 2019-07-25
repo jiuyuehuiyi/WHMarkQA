@@ -13,7 +13,7 @@
     - [验证spec文件](#验证spec文件)
     - [获取MIT文件](#获取MIT文件)
     - [发布podspec](#发布podspec)
-
+    - [删除已发布的podspec](#删除已发布的podspec)
 
 # git
 ## 查看本地tag
@@ -50,6 +50,9 @@ pod trunk push `XXX.podspec`
 pod trunk push `XXX.podspec`--allow-warnings
 
 提交后可在[Specs仓库搜索](https://github.com/CocoaPods/Specs),如果能够搜索到说明提交成功
+
+## 删除已发布的podspec
+pod trunk delete `XXX.podspec`
 
 # 常见问题
 
