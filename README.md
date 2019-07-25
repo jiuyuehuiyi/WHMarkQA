@@ -14,6 +14,10 @@
     - [获取MIT文件](#获取MIT文件)
     - [发布podspec](#发布podspec)
     - [删除已发布的podspec](#删除已发布的podspec)
+    - [创建CocoaPods库的模板](#创建CocoaPods库的模板)
+    - [创建一个私有库索引并添加到本地](#创建一个私有库索引并添加到本地)
+    - [查看是否添加成功](#查看是否添加成功)
+    - [向Spec Repo提交podspec](#向Spec)
 
 # git
 ## 查看本地tag
@@ -53,6 +57,18 @@ pod trunk push `XXX.podspec`--allow-warnings
 
 ## 删除已发布的podspec
 pod trunk delete `XXX.podspec`
+
+## 创建CocoaPods库的模板
+pod lib create `XXX`
+
+## 创建一个私有库索引并添加到本地
+pod repo add localSpec `私有库索引仓库`
+
+## 查看是否添加成功
+pod repo
+
+## 向Spec Repo提交podspec
+pod repo push localSpec `XXX.podspec`
 
 # 常见问题
 
