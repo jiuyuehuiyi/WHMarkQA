@@ -17,7 +17,7 @@
     - [创建CocoaPods库的模板](#创建CocoaPods库的模板)
     - [创建一个私有库索引并添加到本地](#创建一个私有库索引并添加到本地)
     - [查看是否添加成功](#查看是否添加成功)
-    - [向Spec Repo提交podspec](#向Spec)
+    - [向Repo提交podspec](#向Repo提交podspec)
 
 # git
 ## 查看本地tag
@@ -67,7 +67,7 @@ pod repo add localSpec `私有库索引仓库`
 ## 查看是否添加成功
 pod repo
 
-## 向Spec Repo提交podspec
+## 向Repo提交podspec
 pod repo push localSpec `XXX.podspec`
 
 # 常见问题
