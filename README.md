@@ -20,7 +20,7 @@
     - [向Repo提交podspec](#向Repo提交podspec)
     
 - [常见问题](#常见问题)
-   - [1. unable to find a pod with name, author, summary, or description matching `XXX`](#unable-to-find-a-pod-with-name)
+   - [1. unable to find a pod with name, author, summary, or description matching `XXX`](#unable-to-find-a-pod-with-name,)
    - [2. pod 'Realm' 在执行pod install --verbose 卡住在 downloading dependency: sync `XXX` from …](./PodQA/2.md)
 
 # git
@@ -76,7 +76,8 @@ pod repo push localSpec `XXX.podspec`
 
 # 常见问题
 
-## unable to find a pod with name, author, summary, or description matching `XXX`
+## unable to find a pod with name,
+author, summary, or description matching `XXX`
 
 Step:
 1. rm ~/Library/Caches/CocoaPods/search_index.json
