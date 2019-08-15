@@ -76,8 +76,7 @@ pod repo push localSpec `XXX.podspec`
 
 # 常见问题
 
-## unable to find a pod with name
-, author, summary, or description matching `XXX`
+## unable to find a pod with name, author, summary, or description matching `XXX`
 
 Step:
 1. rm ~/Library/Caches/CocoaPods/search_index.json
