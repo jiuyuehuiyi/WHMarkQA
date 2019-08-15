@@ -18,6 +18,10 @@
     - [创建一个私有库索引并添加到本地](#创建一个私有库索引并添加到本地)
     - [查看是否添加成功](#查看是否添加成功)
     - [向Repo提交podspec](#向Repo提交podspec)
+    
+- [常见问题](#常见问题)
+   - [unable to find a pod with name, author, summary, or description matching `XXX`](#1)
+   - [pod 'Realm' 在执行pod install --verbose 卡住在 downloading dependency: sync `XXX` from …](./PodQA/2.md)
 
 # git
 ## 查看本地tag
@@ -72,8 +76,9 @@ pod repo push localSpec `XXX.podspec`
 
 # 常见问题
 
-## unable to find a pod with name, author, summary, or description matching `XXX`
+## 1. unable to find a pod with name, author, summary, or description matching `XXX`
 
 Step:
 1. rm ~/Library/Caches/CocoaPods/search_index.json
 2. pod setup
+
