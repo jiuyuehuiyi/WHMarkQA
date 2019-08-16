@@ -20,8 +20,10 @@
     - [向Repo提交podspec](#向Repo提交podspec)
     
 - [常见问题](#常见问题)
-   - [1. unable to find a pod with name, author, summary, or description matching `XXX`](#unable-to-find-a-pod-with-name-author-summary-or-description-matchingxxx)
+   - [1. unable to find a pod with name, author, summary, or description matching `XXX`](#1-unable-to-find-a-pod-with-name-author-summary-or-description-matchingxxx)
    - [2. pod 'Realm' 在执行pod install --verbose 卡住在 downloading dependency: sync `XXX` from …](./PodQA/2.md)
+   
+   - [3.修改极光官网应用中的 BundleID 或包名](https://community.jiguang.cn/t/topic/5145/29)
 
 # git
 ## 查看本地tag
@@ -76,7 +78,7 @@ pod repo push localSpec `XXX.podspec`
 
 # 常见问题
 
-## unable to find a pod with name, author, summary, or description matching `XXX`
+## 1. unable to find a pod with name, author, summary, or description matching `XXX`
 
 Step:
 1. rm ~/Library/Caches/CocoaPods/search_index.json
