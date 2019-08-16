@@ -6,6 +6,10 @@
     - [将tag传到远程](#将tag传到远程)
     - [删除本地tag](#删除本地tag)
     - [删除远程标签](#删除远程标签)
+    - [查看本地分支](#查看本地分支)
+    - [查看远程分支](#查看远程分支)
+    - [创建分支](#创建分支)
+    - [切换分支](#切换分支)
         
 - [pod](#pod)
     - [注册Trunk](#注册Trunk)
@@ -22,7 +26,6 @@
 - [常见问题](#常见问题)
    - [1. unable to find a pod with name, author, summary, or description matching `XXX`](#1-unable-to-find-a-pod-with-name-author-summary-or-description-matchingxxx)
    - [2. pod 'Realm' 在执行pod install --verbose 卡住在 downloading dependency: sync `XXX` from …](./PodQA/2.md)
-   
    - [3.修改极光官网应用中的 BundleID 或包名](https://community.jiguang.cn/t/topic/5145/29)
 
 # git
@@ -40,6 +43,19 @@ git tag -d `标签名`
 
 ## 删除远程标签
 git push origin :refs/tags/`标签名`
+
+## 查看本地分支
+git branch
+
+## 查看远程分支
+git branch -r
+
+## 创建分支
+git branch `<分支名>`
+
+## 切换分支
+git checkout `<分支名>`
+
 
 # pod
 
