@@ -27,6 +27,7 @@
    - [1. unable to find a pod with name, author, summary, or description matching `XXX`](#1-unable-to-find-a-pod-with-name-author-summary-or-description-matchingxxx)
    - [2. pod 'Realm' 在执行pod install --verbose 卡住在 downloading dependency: sync `XXX` from …](./PodQA/2.md)
    - [3.修改极光官网应用中的 BundleID 或包名](https://community.jiguang.cn/t/topic/5145/29)
+   - [4.Xcode 清理存储空间](./OtherQA/O1.md)
 
 # git
 ## 查看本地tag
