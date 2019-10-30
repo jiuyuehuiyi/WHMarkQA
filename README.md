@@ -28,6 +28,7 @@
    - [2. pod 'Realm' 在执行pod install --verbose 卡住在 downloading dependency: sync `XXX` from …](./PodQA/2.md)
    - [3.修改极光官网应用中的 BundleID 或包名](https://community.jiguang.cn/t/topic/5145/29)
    - [4.Xcode 清理存储空间](./OtherQA/O1.md)
+   - [5.mp3转caf]()
 
 # git
 ## 查看本地tag
@@ -101,3 +102,66 @@ Step:
 1. rm ~/Library/Caches/CocoaPods/search_index.json
 2. pod setup
 
+## 5.mp3转caf
+afconvert input output -d ima4 -f caff -v
+
+* afconvert 音频转换指令
+* -f adts 指定文件格式:acc格式音频需要指定为adts(文件与格式化格式见上面帮助信息)
+* -d acc 指定数据格式
+* input.wav 待转换文件名称
+
+```
+Audio file and data formats:
+'3gpp' = 3GP Audio (.3gp)
+           data_formats: 'Qclp' 'aac ' 'aace' 'aacf' 'aach' 'aacl' 
+                         'aacp' 'samr' 
+'3gp2' = 3GPP-2 Audio (.3g2)
+           data_formats: 'Qclp' 'aac ' 'aace' 'aacf' 'aach' 'aacl' 
+                         'aacp' 'samr' 
+'adts' = AAC ADTS (.aac, .adts)
+           data_formats: 'aac ' 'aach' 'aacp' 
+'ac-3' = AC3 (.ac3)
+           data_formats: 'ac-3' 
+'AIFC' = AIFC (.aifc, .aiff, .aif)
+           data_formats: I8 BEI16 BEI24 BEI32 BEF32 BEF64 UI8 'ulaw' 
+                         'alaw' 'MAC3' 'MAC6' 'ima4' 'QDMC' 'QDM2' 
+                         'Qclp' 'agsm' 
+'AIFF' = AIFF (.aiff, .aif)
+           data_formats: I8 BEI16 BEI24 BEI32 
+'amrf' = AMR (.amr)
+           data_formats: 'samr' 'sawb' 
+'m4af' = Apple MPEG-4 Audio (.m4a, .m4r)
+           data_formats: 'aac ' 'aace' 'aacf' 'aach' 'aacl' 'aacp' 
+                         'ac-3' 'alac' 'ec-3' 'paac' 'pac3' 'qec3' 
+                         'zec3' 
+'m4bf' = Apple MPEG-4 AudioBooks (.m4b)
+           data_formats: 'aac ' 'aace' 'aacf' 'aach' 'aacl' 'aacp' 
+                         'paac' 
+'caff' = CAF (.caf)
+           data_formats: '.mp1' '.mp2' '.mp3' 'QDM2' 'QDMC' 'Qclp' 
+                         'Qclq' 'aac ' 'aace' 'aacf' 'aach' 'aacl' 
+                         'aacp' 'ac-3' 'alac' 'alaw' 'dvi8' 'ec-3' 
+                         'ilbc' 'ima4' I8 BEI16 BEI24 BEI32 BEF32 
+                         BEF64 LEI16 LEI24 LEI32 LEF32 LEF64 'ms\x00\x02' 
+                         'ms\x00\x11' 'ms\x001' 'paac' 'pac3' 'pec3' 
+                         'qaac' 'qac3' 'qach' 'qacp' 'qec3' 'samr' 
+                         'ulaw' 'zaac' 'zac3' 'zach' 'zacp' 'zec3' 
+'ec-3' = EC3 (.ec3)
+           data_formats: 'ec-3' 
+'MPG1' = MPEG Layer 1 (.mp1, .mpeg, .mpa)
+           data_formats: '.mp1' 
+'MPG2' = MPEG Layer 2 (.mp2, .mpeg, .mpa)
+           data_formats: '.mp2' 
+'MPG3' = MPEG Layer 3 (.mp3, .mpeg, .mpa)
+           data_formats: '.mp3' 
+'mp4f' = MPEG-4 Audio (.mp4)
+           data_formats: 'aac ' 'aace' 'aacf' 'aach' 'aacl' 'aacp' 
+                         'ac-3' 'ec-3' 'qec3' 'zec3' 
+'NeXT' = NeXT/Sun (.snd, .au)
+           data_formats: I8 BEI16 BEI24 BEI32 BEF32 BEF64 'ulaw' 
+'Sd2f' = Sound Designer II (.sd2)
+           data_formats: I8 BEI16 BEI24 BEI32 
+'WAVE' = WAVE (.wav)
+           data_formats: UI8 LEI16 LEI24 LEI32 LEF32 LEF64 'ulaw' 
+                         'alaw' 
+```
